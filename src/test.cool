@@ -1,0 +1,24 @@
+class Base {
+  x : Int <- 10;
+
+  getX() : Int {
+    x;
+  };
+}
+
+class Main inherits Base {
+  y : Int <- 20;
+  z : Bool <- true;
+
+  add(n1 : Int, n2 : Int) : Int {
+    n1 + n2;
+  };
+
+  testIf() : Int {
+    if z then
+      y
+    else
+      x
+    fi;
+  };
+}
